@@ -2,7 +2,8 @@
     <div>
         <h2>{{ eng2kanji(area) }}</h2>
         <p>{{ info.data.list[0].main }}</p>
-        <p>{{ info.data.list[2].main }}</p>
+        <p>{{ info.data.list[1].main }}</p>
+        <p>{{ info.data.list[1].weather[0] }}</p>
     </div>
 </template>
 
@@ -49,7 +50,7 @@ export default {
         }
     },
     mounted () {
-        var url = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + this.areadata[this.area].lat + '&lon='+ this.areadata[this.area].lon +'&lang=ja&appid=' + apikey;
+        var url = 'http://api.openweathermap.org/data/2.5/forecast?units=metric&lat=' + this.areadata[this.area].lat + '&lon='+ this.areadata[this.area].lon +'&lang=ja&appid=' + apikey;
         console.log(url);
         axios
         .get(url)

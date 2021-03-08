@@ -1,6 +1,8 @@
 # ut-weather-map
 ## about OpenWeather api
-[reference](https://openweathermap.org/forecast5)
+[api reference](https://openweathermap.org/forecast5)
+
+[weather icons](https://openweathermap.org/weather-conditions)
 
 ## Project setup
 ```
