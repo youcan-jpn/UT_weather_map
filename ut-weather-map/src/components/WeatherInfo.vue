@@ -11,7 +11,7 @@
 import WeatherInfoItem from './WeatherInfoItem.vue'
 
 const axios = require('axios')
-const apikey = 'e22a20e66f79960ffea913f0e1d7df7b'
+const apikey = ''
 // githubに載せないように注意
 
 export default {
